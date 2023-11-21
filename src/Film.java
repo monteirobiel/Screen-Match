@@ -11,7 +11,7 @@ public class Film {
     // Methods
 
     public void dataSheet () {
-        System.out.println("Nome do filme: " + name );
+        System.out.println("Film name: " + name );
         System.out.println("Year of release: " +releaseYear);
         System.out.println("Film duration: " + durationTime);
         System.out.println("Its included in the plan: " + planIncluded);

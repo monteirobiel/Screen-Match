@@ -1,5 +1,9 @@
+import br.com.monteiro.screenmatch.calculations.FilterRecommendation;
+import br.com.monteiro.screenmatch.models.Episode;
 import br.com.monteiro.screenmatch.models.Film;
+import br.com.monteiro.screenmatch.calculations.Film.TimeCalculator;
 import br.com.monteiro.screenmatch.models.Series;
+
 
 public class Main {
 
@@ -9,7 +13,7 @@ public class Main {
 
         film01.setName("American Sniper");
         film01.setReleaseYear(2014);
-        film01.setDurationTime(180);
+        film01.setDurationTime(250);
         film01.setPlanIncluded(true);
 
         film01.dataSheet();
@@ -31,5 +35,18 @@ public class Main {
         prisonBreak.setMinsPerEpisodes(50);
         prisonBreak.dataSheet();
         System.out.println("Prison Break duration time: " + prisonBreak.getDurationTime());
+
+        TimeCalculator calculator = new TimeCalculator();
+        calculator.included(film01);
+        System.out.println(calculator.getTotalTime());
+
+        FilterRecommendation filterRec = new FilterRecommendation();
+        filterRec.filter(film01);
+
+        Episode episode = new Episode();
+        episode.setNumber(1);
+        episode.setSeries(prisonBreak);
+        episode.setTotalViews(300);
+        filterRec.filter(episode);
     }
 }

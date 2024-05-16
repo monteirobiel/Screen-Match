@@ -4,15 +4,16 @@ import br.com.monteiro.screenmatch.models.Film;
 import br.com.monteiro.screenmatch.calculations.Film.TimeCalculator;
 import br.com.monteiro.screenmatch.models.Series;
 
+import java.util.ArrayList;
+
 
 public class Main {
 
+
     public static void main(String[] args) {
 
-        Film film01 = new Film();
 
-        film01.setName("American Sniper");
-        film01.setReleaseYear(2014);
+        Film film01 = new Film("Sniper Americano", 2014);
         film01.setDurationTime(250);
         film01.setPlanIncluded(true);
 
@@ -24,17 +25,15 @@ public class Main {
         System.out.println("Total reviews: " + film01.getTotalReviews());
         System.out.println("Reviews average: " + film01.average());
 
-        Series prisonBreak = new Series();
 
-        prisonBreak.setName("Prison Break");
-        prisonBreak.setReleaseYear(2005);
-        prisonBreak.setPlanIncluded(true);
-        prisonBreak.setActivated(true);
-        prisonBreak.setSeasons(5);
-        prisonBreak.setEpisodePerSeasons(10);
-        prisonBreak.setMinsPerEpisodes(50);
-        prisonBreak.dataSheet();
-        System.out.println("Prison Break duration time: " + prisonBreak.getDurationTime());
+        Series novaSerie1 = new Series("Prison Break", 2005);
+        novaSerie1.setPlanIncluded(true);
+        novaSerie1.setActivated(true);
+        novaSerie1.setSeasons(5);
+        novaSerie1.setEpisodePerSeasons(10);
+        novaSerie1.setMinsPerEpisodes(50);
+        novaSerie1.dataSheet();
+        System.out.println("Prison Break duration time: " + novaSerie1.getDurationTime());
 
         TimeCalculator calculator = new TimeCalculator();
         calculator.included(film01);
@@ -45,8 +44,19 @@ public class Main {
 
         Episode episode = new Episode();
         episode.setNumber(1);
-        episode.setSeries(prisonBreak);
+        episode.setSeries(novaSerie1);
         episode.setTotalViews(300);
         filterRec.filter(episode);
+
+
+        Film novoFilm = new Film("JAVA", 1995);
+        novoFilm.review(5);
+
+        ArrayList <Film> filmList = new ArrayList<>();
+        filmList.add(novoFilm);
+        System.out.println("Tamanho da lista " + filmList.size());
+        System.out.println("Primeiro Filme: " + filmList.get(0).getName());
+        System.out.println("toString do Filme: " + filmList.get(0).toString());
+
     }
 }

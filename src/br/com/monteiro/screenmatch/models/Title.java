@@ -1,16 +1,18 @@
 package br.com.monteiro.screenmatch.models;
 
-public class Catalog {
+public class Title {
     private String name;
-
     private int releaseYear;
     private int durationTime;
-    private boolean planIncluded;
-
+    private boolean planIncluded; //boolean
     private double sumReview;
-
     private int totalReviews;
 
+    //Construtor
+    public Title(String name, int releaseYear) {
+        this.name = name;
+        this.releaseYear = releaseYear;
+    }
 
     // Getters and Setters
 

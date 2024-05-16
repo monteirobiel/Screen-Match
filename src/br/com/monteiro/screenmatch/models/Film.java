@@ -2,8 +2,13 @@ package br.com.monteiro.screenmatch.models;
 
 import br.com.monteiro.screenmatch.calculations.Review;
 
-public class Film extends Catalog implements Review {
+public class Film extends Title implements Review {
     private String director;
+
+    //Construtor
+    public Film(String nome, int releaseYear) {
+        super(nome, releaseYear);
+    }
 
     // Getter and Setter
     public String getDirector() {
@@ -17,5 +22,10 @@ public class Film extends Catalog implements Review {
     @Override
     public int getReview() {
         return (int) average() / 2 ;
+    }
+
+    @Override
+    public String toString() {
+        return "Filme: " + this.getName() + " (" + this.getReleaseYear() + ")";
     }
 }

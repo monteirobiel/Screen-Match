@@ -1,7 +1,5 @@
 package br.com.monteiro.screenmatch.calculations.Film;
-import br.com.monteiro.screenmatch.models.Catalog;
-import br.com.monteiro.screenmatch.models.Film;
-import br.com.monteiro.screenmatch.models.Series;
+import br.com.monteiro.screenmatch.models.Title;
 
 public class TimeCalculator {
 
@@ -19,7 +17,7 @@ public class TimeCalculator {
 //        this.totalTime += s.getDurationTime();
 //    }
 
-    public void included (Catalog catalog) {
+    public void included (Title catalog) {
         this.totalTime += catalog.getDurationTime();
         System.out.println("adding duration in minutes of: " + catalog);
     }

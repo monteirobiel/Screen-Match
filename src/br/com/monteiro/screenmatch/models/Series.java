@@ -1,15 +1,17 @@
 package br.com.monteiro.screenmatch.models;
 
-public class Series extends Catalog{
+public class Series extends Title {
 
     private int seasons;
-    private boolean activated;
     private int episodePerSeasons;
     private int minsPerEpisodes;
-
+    private boolean activated;
     private int minsPerSeasons;
 
-
+    //Construtor
+    public Series (String name, int releaseYear) {
+        super(name, releaseYear);
+    }
 
     // Getters and Setters
     public int getSeasons() {

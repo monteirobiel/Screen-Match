@@ -1,5 +1,11 @@
 package br.com.monteiro.screenmatch.main;
 
+import br.com.monteiro.screenmatch.models.Title;
+import br.com.monteiro.screenmatch.models.TituloOmdb;
+import com.google.gson.FieldNamingPolicy;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+
 import java.io.IOException;
 import java.net.URI;
 import java.net.http.HttpClient;

@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="92cf6613-d46f-4b8b-a575-84cd34d18866" name="Changes" comment="feat(title):Implement constructors to initialize attributes" />
+    <list default="true" id="92cf6613-d46f-4b8b-a575-84cd34d18866" name="Changes" comment="Feat: Adding Collections">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ScreenMatch.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ScreenMatch.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/monteiro/screenmatch/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/monteiro/screenmatch/main/MainComBusca.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/monteiro/screenmatch/main/MainComBusca.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/monteiro/screenmatch/models/Film.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/monteiro/screenmatch/models/Film.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/monteiro/screenmatch/models/Series.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/monteiro/screenmatch/models/Series.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/monteiro/screenmatch/models/Title.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/monteiro/screenmatch/models/Title.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,18 +29,18 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="REBASE" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "monteirobiel"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;monteirobiel&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/monteirobiel/Screen-Match.git",
-    "accountId": "3f844d0d-e353-452a-8ef4-6de9c3aecd3c"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/monteirobiel/Screen-Match.git&quot;,
+    &quot;accountId&quot;: &quot;91416cf8-6111-458b-8d71-50486b7ef079&quot;
   }
-}]]></component>
+}</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -48,28 +56,37 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MainComBusca.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MainComListas.executor&quot;: &quot;Run&quot;,
+    &quot;Application.teste.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/gabrieloliveira/Library/Mobile Documents/com~apple~CloudDocs/Documents/Programming/Screen-Match&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="br.com.monteiro.screenmatch.main" />
       <recent name="br.com.monteiro.screenmatch.calculations" />
     </key>
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
+      <option name="MAIN_CLASS_NAME" value="br.com.monteiro.screenmatch.main.Main" />
       <module name="ScreenMatch" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -84,8 +101,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.15989.150" />
-        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-IU-241.15989.150" />
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.17011.79" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.17011.79" />
       </set>
     </attachedChunks>
   </component>
@@ -102,7 +119,20 @@
       <workItem from="1700761090254" duration="9088000" />
       <workItem from="1700815776091" duration="2883000" />
       <workItem from="1715724512290" duration="16818000" />
-      <workItem from="1715870909259" duration="1464000" />
+      <workItem from="1715870909259" duration="3872000" />
+      <workItem from="1715876202342" duration="13000" />
+      <workItem from="1716598773220" duration="1681000" />
+      <workItem from="1716601595153" duration="2578000" />
+      <workItem from="1716604692172" duration="4112000" />
+      <workItem from="1716612589135" duration="333000" />
+      <workItem from="1716635689954" duration="2683000" />
+      <workItem from="1716754007085" duration="3433000" />
+      <workItem from="1716759785908" duration="2199000" />
+      <workItem from="1716849601386" duration="12003000" />
+      <workItem from="1717105439377" duration="1128000" />
+      <workItem from="1717106722669" duration="3765000" />
+      <workItem from="1717111822331" duration="561000" />
+      <workItem from="1717112713222" duration="331000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -136,17 +166,63 @@
       <option name="project" value="LOCAL" />
       <updated>1715872272266</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Initial commit">
+      <option name="closed" value="true" />
+      <created>1715872440054</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1715872440054</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Feat(API Buscar Filme): Adicionando endpoint para busca de filmes pelo nome.">
+      <option name="closed" value="true" />
+      <created>1716760161161</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1716760161161</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Feat: Adding Record Class">
+      <option name="closed" value="true" />
+      <created>1717105160454</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1717105160454</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Feat: Adding Collections">
+      <option name="closed" value="true" />
+      <created>1717105311635</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1717105311635</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Initial commit" />
     <MESSAGE value="changes" />
     <MESSAGE value="feat(title):Implement constructors to initialize attributes" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(title):Implement constructors to initialize attributes" />
+    <MESSAGE value="Initial commit" />
+    <MESSAGE value="Feat(API Buscar Filme): Adicionando endpoint para busca de filmes pelo nome." />
+    <MESSAGE value="Feat: Adding Record Class" />
+    <MESSAGE value="Feat: Adding Collections" />
+    <option name="LAST_COMMIT_MESSAGE" value="Feat: Adding Collections" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -28,4 +28,9 @@ public class Film extends Title implements Review {
     public String toString() {
         return "Filme: " + this.getName() + " (" + this.getReleaseYear() + ")";
     }
+
+    @Override
+    public int compareTo(Title o) {
+        return 0;
+    }
 }

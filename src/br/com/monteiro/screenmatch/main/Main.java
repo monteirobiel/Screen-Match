@@ -1,3 +1,5 @@
+package br.com.monteiro.screenmatch.main;
+
 import br.com.monteiro.screenmatch.calculations.FilterRecommendation;
 import br.com.monteiro.screenmatch.models.Episode;
 import br.com.monteiro.screenmatch.models.Film;

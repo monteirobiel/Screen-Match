@@ -1,17 +1,23 @@
 package br.com.monteiro.screenmatch.models;
 
-public class Title {
+import com.google.gson.annotations.SerializedName;
+
+public class Title implements Comparable<Title> {
     private String name;
     private int releaseYear;
     private int durationTime;
     private boolean planIncluded; //boolean
     private double sumReview;
     private int totalReviews;
+    private Title anotherTitle;
 
     //Construtor
     public Title(String name, int releaseYear) {
         this.name = name;
         this.releaseYear = releaseYear;
+    }
+
+    public Title(TituloOmdb meuTituloOmdb) {
     }
 
     // Getters and Setters
@@ -72,5 +78,15 @@ public class Title {
 
     public double average () {
         return sumReview / totalReviews;
+    }
+
+    @Override
+    public int compareTo(Title anotherTitle) {
+        return this.getName().compareTo(anotherTitle.getName());
+    }
+
+    @Override
+    public String toString() {
+        return "Title{" + "name='" + name + '\'' + ", releaseYear=" + releaseYear + '}';
     }
 }

@@ -1,5 +1,6 @@
 package br.com.monteiro.screenmatch.models;
 
+import br.com.monteiro.screenmatch.exception.ErroDeConversaoDeAnoException;
 import com.google.gson.annotations.SerializedName;
 
 public class Title implements Comparable<Title> {
@@ -18,6 +19,10 @@ public class Title implements Comparable<Title> {
     }
 
     public Title(TituloOmdb meuTituloOmdb) {
+        if (meuTituloOmdb.year().length() > 4 ) {
+            throw new ErroDeConversaoDeAnoException("Nao consegui converter o ano" +
+                    "porque tem mais de 4 caracteres");
+        }
     }
 
     // Getters and Setters
